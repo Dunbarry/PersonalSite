@@ -18,10 +18,12 @@ display: inline-block;
 width: 250px;
 text-align: center;
 padding: 10px;
+margin: 25px;
 }
 
 .bubbleContainer {
-padding: 10px;
+height:auto;
+padding: 5px;
 }
 
 .container {
