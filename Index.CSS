@@ -1,0 +1,25 @@
+div {
+    box-shadow: 5px 5px 2.5px grey;
+}
+.container {
+  background:grey;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius:100px;
+  border-top: 30px solid grey;
+  border-bottom: 30px solid white;
+  border-left: 30px solid grey;
+  border-right: 30px solid grey;
+  animation: mySpinAnimation 10s infinite;
+  animation-timing-function: linear;
+}
+.inner {
+  width:30px;
+  height:30px;
+}
+@keyframes mySpinAnimation {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
