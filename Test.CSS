@@ -4,9 +4,19 @@
   margin: auto;
 }
 
+.bubble {
+width: 250px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-align: center;
+}
+
+.bubbleContainer {
+padding: 10px;
+}
+
 .container {
   margin: auto;
-  background: black;
+  background: white;
   width:300px;
   border-radius: 50%;
 }
