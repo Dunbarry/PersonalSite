@@ -1,34 +1,31 @@
-.container {
-  background:grey;
-  width:300px;
+
+
+.container{
+  float: right ;
+  padding: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+  background: white;
+  height: 50%; /*550px*/
+  width:500px;
+  opacity: .85;
+  font-family: Courier;
+  font-size: 20px;
+  text-align: left;
 }
 
-#inner{
-  border-top:30px solid grey;
-  border-bottom:30px solid grey;
+.container:hover{
+  text-shadow: 8px 4px 4px grey;
+  transition: all 1000ms ease;
+  opacity: .85;
 }
 
-.circle {
-  animation: mySpinAnimation 10s infinite;  /*setting animation. @keyframes/
-  animation-timing-function: ease-in-out;  /*Slows rotation*/
-  margin: 20px;
-  border-top:30px solid black;
-  border-bottom:30px solid white;
-  border-right:30px solid grey;
-  border-left:30px solid grey;
-  border-radius:50%;
+body{
+  background-image: url("http://cdn.earthporm.com/wp-content/uploads/2014/08/amazing-trees-1-2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-@keyframes mySpinAnimation {
-  0%   { transform: rotate(0deg);}
-  50%  { transform: rotate(-360deg);}
-  100% { transform: rotate(0deg);}
-}
-
-.table {
-  height: 50px;
-  border-radius: 35%;
-  border-top: 400px
-  border-bottom: 400px;
-  width: 470px;
+body, html{
+  height: 100%;
 }
