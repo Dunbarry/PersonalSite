@@ -4,21 +4,38 @@
   margin: auto;
 }
 
-#right {
-  float:right;
+#right{
+    float:right;
+    margin-right: 50px;
 }
 
-.bubble:hover {
+
+.bubbleTop:hover {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 500ms ease;
 }
 
-.bubble {
+.bubbleBottom:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 1000ms ease;
+}
+
+.bubbleTop {
 display: inline-block;
 width: 250px;
 font-family: Courier;
-font-size: 25px;
+font-size: 20px;
 text-align: center;
+margin-left: 50px;
+}
+
+.bubbleBottom {
+display: inline-block;
+width: 250px;
+font-family: Courier;
+font-size: 20px;
+text-align: center;
+margin-left: 50px;
 }
 
 .bubbleContainer {
@@ -54,7 +71,7 @@ padding: 1px;
 
 #outer:hover {
   box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
-  transition: all 500ms ease;
+  transition: all 1000ms ease;
 }
 
 @keyframes mySpinAnimation {
