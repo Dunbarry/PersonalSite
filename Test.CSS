@@ -44,12 +44,34 @@ padding: 1px;
 }
 
 #rover {
+  position:relative;
+  background: #FCF0AD;
+  width: 300px;
+  padding: 3px;
   margin: auto;
-  background: white;
-  width:300px;
-  border-radius: 50%;
-  padding: 0px;
-}
+  border-radius: 5px;
+  border-bottom: 4px solid #ccc;
+  }
+
+  .dog-ear:before,
+  .dog-ear:after{
+    content: '';
+    display:block;
+    right:0;
+    top:0;
+    position: absolute;
+  }
+
+  .dog-ear:after{
+    border-top: 40px solid transparent;
+    border-left: 40px solid rgba(0,0,0,.08);
+  }
+
+  .dog-ear:before{
+    border-bottom:40px solid transparent;
+    border-right: 40px solid white;
+  }
+
 
 #inner{
   border-top:30px solid white;
