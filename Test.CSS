@@ -16,14 +16,14 @@
 .bubble {
 display: inline-block;
 width: 250px;
+font-family: Courier;
+font-size: 25px;
 text-align: center;
-padding: 10px;
-margin: 25px;
 }
 
 .bubbleContainer {
 height:auto;
-padding: 5px;
+padding: 1px;
 }
 
 .container {
