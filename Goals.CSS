@@ -13,6 +13,7 @@
     padding: 18px;
     border-radius: 2.5px;
     font-family: courier;
+    text-align: justify;
     }
 
     .dog-ear:before,
@@ -34,13 +35,14 @@
       border-right: 40px solid white;
     }
 
-.container:hover{
+.dog-ear:hover{
   text-shadow: 8px 4px 4px grey;
   transition: all 1000ms ease;
   opacity: 1;
 }
 
 body{
+  margin: 0;
   background-image: url("http://cdn.earthporm.com/wp-content/uploads/2014/08/amazing-trees-1-2.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
