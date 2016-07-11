@@ -1,21 +1,42 @@
 .container{
-  position: absolute;
-  padding: 10px;
-  margin-top: 5px;
-  margin-right: 5px;
-  background: white;
-  height: 50%; /*550px*/
-  opacity: .85;
-  width:500px;
-  font-family: Courier;
-  font-size: 20px;
-  text-align: left;
+    float: left;
+    height: 100%;
+    width:400px;
+    background-color: white;
 }
+
+.dog-ear{
+    position:relative;
+    background: #FCF0AD;
+    top: 13.5%;
+    width: 350px;
+    padding: 18px;
+    border-radius: 2.5px;
+    font-family: courier;
+    }
+
+    .dog-ear:before,
+    .dog-ear:after{
+      content: '';
+      display:block;
+      right:0;
+      top:0;
+      position: absolute;
+    }
+
+    .dog-ear:after{
+      border-top: 40px solid transparent;
+      border-left: 40px solid rgba(0,0,0,.08);
+    }
+
+    .dog-ear:before{
+      border-bottom:40px solid transparent;
+      border-right: 40px solid white;
+    }
 
 .container:hover{
   text-shadow: 8px 4px 4px grey;
   transition: all 1000ms ease;
-  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
 
