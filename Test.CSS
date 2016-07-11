@@ -49,29 +49,27 @@ padding: 1px;
   width: 300px;
   padding: 3px;
   margin: auto;
-  border-radius: 5px;
-  border-bottom: 4px solid #ccc;
+  border-radius: 2.5px;
   }
 
-  .dog-ear:before,
-  .dog-ear:after{
+    .dog-ear:before,
+    .dog-ear:after{
     content: '';
     display:block;
     right:0;
     top:0;
     position: absolute;
-  }
+    }
 
-  .dog-ear:after{
+    .dog-ear:after{
     border-top: 40px solid transparent;
     border-left: 40px solid rgba(0,0,0,.08);
-  }
+    }
 
-  .dog-ear:before{
+    .dog-ear:before{
     border-bottom:40px solid transparent;
     border-right: 40px solid white;
-  }
-
+    }
 
 #inner{
   border-top:30px solid white;
@@ -86,9 +84,9 @@ padding: 1px;
   animation-timing-function: linear;
   margin: 20px;
   border-top:30px solid hsl(198, 50%, 60%);;
-  border-bottom:30px solid white;
-  border-right:30px solid white;
-  border-left:30px solid white;
+  border-bottom:30px solid #FCF0AD;
+  border-right:30px solid #FCF0AD;
+  border-left:30px solid #FCF0AD;
   border-radius:50%;
 }
 

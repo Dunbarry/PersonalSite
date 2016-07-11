@@ -2,15 +2,15 @@
     float: left;
     height: 100%;
     width:400px;
-    background-color: white;
+    background-image: url(http://www.fumcs.com/wp-content/uploads/2012/12/notebook-paper-1-lines.jpg);
 }
 
 .dog-ear{
     position:relative;
     background: #FCF0AD;
-    top: 13.5%;
+    top: 11.5%;
     width: 350px;
-    padding: 18px;
+    padding: 23px;
     border-radius: 2.5px;
     font-family: courier;
     text-align: justify;
@@ -40,6 +40,47 @@
   transition: all 1000ms ease;
   opacity: 1;
 }
+
+#rover {
+  position:relative;
+  background: transparent;
+  width: 300px;
+  top: 12.5%;
+  margin: auto;
+  border-radius: 50%;
+  }
+
+  #inner{
+    border-top:30px solid white;
+    border-bottom:30px solid white;
+    border-right:30px solid white;
+    border-left:30px solid white;
+    opacity: 0;
+  }
+
+  .circle {
+    animation: mySpinAnimation 10s infinite;  /*setting animation. @keyframes*/
+    animation-timing-function: linear;
+    margin: 20px;
+    border-top:30px solid hsl(198, 50%, 60%);;
+    border-bottom:30px solid transparent;
+    border-right:30px solid transparent;
+    border-left:30px solid transparent;
+    border-radius:50%;
+  }
+
+  #outer:hover {
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+    border-bottom:30px solid white;
+    border-right:30px solid white;
+    border-left:30px solid white;
+    transition: all 1000ms ease;
+  }
+
+  @keyframes mySpinAnimation {
+    0%   { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  }
 
 body{
   margin: 0;
