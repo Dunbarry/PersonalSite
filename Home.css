@@ -1,0 +1,98 @@
+#right{
+    float:right;
+    margin-right: 50px;
+}
+
+.bubbleTop:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 500ms ease;
+}
+
+.bubbleBottom:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 1000ms ease;
+}
+
+.bubbleTop {
+display: inline-block;
+width: 250px;
+font-family: Courier;
+font-size: 20px;
+text-align: center;
+margin-left: 50px;
+}
+
+.bubbleBottom {
+display: inline-block;
+width: 250px;
+font-family: Courier;
+font-size: 20px;
+text-align: center;
+margin-left: 50px;
+}
+
+.bubbleContainer {
+height:auto;
+padding: 1px;
+}
+
+#rover {
+  position:relative;
+  background: #FCF0AD;
+  width: 200px;
+  height: 135px;
+  padding: 10px;
+  padding-top: 55px;
+  margin: auto;
+  border-radius: 2.5px;
+  }
+
+    .dog-ear:before,
+    .dog-ear:after{
+    content: '';
+    display:block;
+    right:0;
+    top:0;
+    position: absolute;
+    }
+
+    .dog-ear:after{
+    border-top: 40px solid transparent;
+    border-left: 40px solid rgba(0,0,0,.08);
+    }
+
+    .dog-ear:before{
+    border-bottom:40px solid transparent;
+    border-right: 40px solid white;
+    }
+
+    /*CSS to House */
+    .house {
+      width: 0px;
+      height: 0px;
+      margin: auto;
+      border-top: auto;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+      border-bottom: 50px solid #AAAACC;
+    }
+
+    .house:after {
+      position: absolute;
+      content: '';
+      width: 100px;
+      height: 60px;
+      background: #AAC;
+      top: 100px;
+      left: 60px;
+    }
+
+    .house:before {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 30px;
+      background: #AAC;
+      top: 70px;
+      left: 145px;
+    }
