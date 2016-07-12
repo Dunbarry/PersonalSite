@@ -45,42 +45,48 @@
 #rover {
   position:relative;
   background: transparent;
-  width: 300px;
-  top: 2%;
-  margin: auto;
-  border-radius: 50%;
+  width: 200px;
+  height: 135px;
+  padding: 10px;
+  padding-top: 55px;
+  margin: 40px;
+  margin-left: 80px;
+  border-radius: 2.5px;
   }
 
-  #inner{
-    border-top:30px solid white;
-    border-bottom:30px solid white;
-    border-right:30px solid white;
-    border-left:30px solid white;
-    opacity: 0;
+  .house {
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    border-top: auto;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 50px solid #AAAACC;
   }
 
-  .circle {
-    animation: mySpinAnimation 10s infinite;  /*setting animation. @keyframes*/
-    animation-timing-function: linear;
-    margin: 20px;
-    border-top:30px solid hsl(198, 50%, 60%);
-    border-bottom:30px solid transparent;
-    border-right:30px solid transparent;
-    border-left:30px solid transparent;
-    border-radius:50%;
+  .house:after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 60px;
+    background: #AAC;
+    top: 100px;
+    left: 60px;
   }
 
-  #outer:hover {
-    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
-    border-bottom:30px solid #FCF0AD;
-    border-right:30px solid #FCF0AD;
-    border-left:30px solid #FCF0AD;
+  .house:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 30px;
+    background: #AAC;
+    top: 70px;
+    left: 145px;
+  }
+
+  .house:hover {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: all 1000ms ease;
-  }
-
-  @keyframes mySpinAnimation {
-    0%   { transform: rotate(0deg);}
-    100% { transform: rotate(360deg);}
   }
 
 body{
