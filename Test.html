@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link type="text/css" rel="stylesheet" href="Test.CSS"/>
+    <link type="text/css" rel="stylesheet" href="Test.css"/>
     <meta charset="utf-8">
-    <title>Testing!</title>
+    <title>Test</title>
   </head>
   <body>
-    <div class="container" id="full">
     <div class="bubbleTop">
       <a href="file:///Users/Drone/Documents/Workshop/Personal_Site/About.html"><img src="http://gardenclub.homedepot.com/wp-content/uploads/2013/10/shutterstock_109846994.jpg" alt="Seed" style="height: 175px" width="100%"></a>
       <div class="bubbleContainer">
       <p>ABOUT</p></div>
-    </div><div class="bubbleTop" id="right">
+    </div>
+    <div class="typebox"  id="welcome"></div>
+    <div class="bubbleTop" id="right">
     <a href="file:///Users/Drone/Documents/Workshop/Personal_Site/Goals.html"><img src="http://cdn.earthporm.com/wp-content/uploads/2014/08/amazing-trees-1-2.jpg" alt="Tree" style="height:175px" width="100%"></a>
     <div class="bubbleContainer">
     <p>GOALS</p>
     </div>
   </div>
+
     <div class="container dog-ear" id="rover">
-    <div class="circle" id="outer">
-    <div class="circle" id="inner">
-    <div class="circle" id="inner"></div>
-                                  </div>
-                                </div>
-                              </div>
+    <div class='house'></div></div>
+
+
 <div class="bubbleBottom">
   <a href="file:///Users/Drone/Documents/Workshop/Personal_Site/About.html"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Fraxinus_excelsior_wood_tangent_section_2_beentree.jpg" alt="Wood" style="height: 175px" width="100%"></a>
   <div class="bubbleContainer">
@@ -32,8 +31,22 @@
   <a href="file:///Users/Drone/Documents/Workshop/Personal_Site/Hangman.html"><img src="http://www.imbetteratwriting.com/wp-content/uploads/2016/02/stack-of-newspapers.jpg" alt="Paper" style="height:175px" width="100%"></a>
 <div class="bubbleContainer">
 <p>HANGMAN</p>
-</div>
-</div>
-</div>
+        </div>
+<script type="text/javascript">
+var string = "Welcome to intelligent paper.";
+var newString=string.split("");
+var l=0;
+var k=0;
+var typist = function (){
+  document.getElementById('welcome').innerHTML=(newString[k]);
+  k++;
+};
+    for(l=0;l<newString.length; l++){
+      var seconds = Math.floor(Math.random()*2000);
+      setTimeout(typist, seconds);
+    }
+</script>
+
+
   </body>
 </html>
