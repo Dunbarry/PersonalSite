@@ -89,6 +89,22 @@
     transition: all 1000ms ease;
   }
 
+  .typebox{
+    position: absolute;
+    display: inline-block;
+    height: 70px;
+    width: 375px;
+    top:75%;
+    margin: 75px;
+    margin-right: 150px;
+    background-color: blue;
+    z-index: 1;
+
+    text-align: center;
+    font-family: courier;
+    font-size: 60px;
+  }
+
 body{
   margin: 0;
   background-image: url("http://gardenclub.homedepot.com/wp-content/uploads/2013/10/shutterstock_109846994.jpg");
