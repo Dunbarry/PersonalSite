@@ -3,20 +3,22 @@
   <head>
     <link type="text/css" rel="stylesheet" href="Home.css"/>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Test</title>
   </head>
   <body>
-    <div class="container" id="full">
     <div class="bubbleTop">
       <a href="file:///Users/Drone/Documents/Workshop/Personal_Site/About.html"><img src="http://gardenclub.homedepot.com/wp-content/uploads/2013/10/shutterstock_109846994.jpg" alt="Seed" style="height: 175px" width="100%"></a>
       <div class="bubbleContainer">
       <p>ABOUT</p></div>
-    </div><div class="bubbleTop" id="right">
+    </div>
+    <div class="typebox"  id="welcome"></div>
+    <div class="bubbleTop" id="right">
     <a href="file:///Users/Drone/Documents/Workshop/Personal_Site/Goals.html"><img src="http://cdn.earthporm.com/wp-content/uploads/2014/08/amazing-trees-1-2.jpg" alt="Tree" style="height:175px" width="100%"></a>
     <div class="bubbleContainer">
     <p>GOALS</p>
     </div>
   </div>
+
     <div class="container dog-ear" id="rover">
     <div class='house'></div></div>
 
@@ -30,7 +32,29 @@
 <div class="bubbleContainer">
 <p>HANGMAN</p>
         </div>
-      </div>
+<script type="text/javascript">
+var string = "hello, g31";
+var newString=string.split("");
+var l=0;
+var k=0;
+var final="";
+var typist = function (){
+	if(l=0){
+	document.getElementById('welcome').innerHTML=(newString[k]);
+	final+=newString[k];
+	} else{
+	document.getElementById('welcome').innerHTML=(final+newString[k]);
+		final+=newString[k];
+	}
+    k++;
+};
+    for(l=0;l<newString.length; l++){
+      var seconds = Math.floor(Math.random()*3000);
+      setTimeout(typist, seconds);
+    }
+
+</script>
+
 
   </body>
 </html>

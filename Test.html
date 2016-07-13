@@ -33,16 +33,23 @@
 <p>HANGMAN</p>
         </div>
 <script type="text/javascript">
-var string = "hello";
+var string = "hello, g31";
 var newString=string.split("");
 var l=0;
 var k=0;
+var final="";
 var typist = function (){
-  document.getElementById('welcome').innerHTML=(newString[k]);
-  k++;
+	if(l=0){
+	document.getElementById('welcome').innerHTML=(newString[k]);
+	final+=newString[k];
+	} else{
+	document.getElementById('welcome').innerHTML=(final+newString[k]);
+		final+=newString[k];
+	}
+    k++;
 };
     for(l=0;l<newString.length; l++){
-      var seconds = Math.floor(Math.random()*2000);
+      var seconds = Math.floor(Math.random()*3000);
       setTimeout(typist, seconds);
     }
 
